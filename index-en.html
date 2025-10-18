@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santiago González Osuna — Junior Pentester</title>
+  <meta name="description" content="Web CV of Santiago González Osuna, Junior Pentester (eJPT)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" role="banner">
+    <nav class="nav">
+      <a href="#inicio" class="logo">SGO<span>_</span></a>
+      <ul class="nav-links">
+        <li><a href="#habilidades">Skills</a></li>
+        <li><a href="#certificaciones">Certifications</a></li>
+        <li><a href="#proyectos">Projects</a></li>
+        <li><a href="#formacion">Education</a></li>
+        <li><a href="#idiomas">Languages</a></li>
+        <li><a href="index.html">ES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio" class="container" role="main">
+    <section class="hero reveal" aria-label="Presentation">
+      <div class="hero-content">
+        <h1>
+          Santiago González Osuna
+          <span class="role"><span id="typed"></span></span>
+        </h1>
+        <p class="tagline">
+          Certified junior pentester (eJPT) focused on offensive cybersecurity, automation and continuous improvement.
+        </p>
+        <div class="contact">
+          <a class="chip" href="mailto:santijuan2404@gmail.com">santijuan2404@gmail.com</a>
+          <a class="chip" href="https://www.linkedin.com/in/santiago-gonzalez-006266369" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="chip" href="documents/CV_Santiago_.pdf" target="_blank" rel="noopener">Download CV</a>
+          <span class="chip">Mazatlán, Sinaloa</span>
+          <span class="chip">Immediate availability</span>
+        </div>
+      </div>
+      <div class="hero-photo" aria-hidden="true">
+        <img src="images/foto-profesional.jpg" alt="Santiago González Osuna - Junior Pentester" class="profile-photo">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+    </section>
+
+    <section id="perfil" class="card reveal" aria-label="Professional profile">
+      <h2>Professional Profile</h2>
+      <p>
+        Certified junior pentester (eJPT) with solid technical foundation and practical experience in controlled environments. Passionate about offensive cybersecurity, with skills in network scanning, web penetration testing, traffic analysis and task automation with Python. Continuously learning cloud security (AWS) and committed to delivering useful and professional results. I stand out for my responsibility, technical curiosity and ability to quickly adapt to new environments and tools.
+      </p>
+    </section>
+
+    <section id="habilidades" class="grid-2 reveal" aria-label="Technical skills">
+      <div class="card">
+        <h2>Technical Skills</h2>
+        <ul class="skills">
+          <li><strong>Pentesting:</strong> Nmap, Burp Suite, sqlmap, FFUF, Wireshark, Metasploit</li>
+          <li><strong>Web Security:</strong> OWASP Top 10, testing in HTML/JS apps, HTTP interception</li>
+          <li><strong>Networks:</strong> TCP/IP, port scanning, WiFi auditing</li>
+          <li><strong>Operating systems:</strong> Kali Linux, Debian Linux, Windows</li>
+          <li><strong>Programming:</strong> Python (scripts), C++, HTML/CSS, Java (basic)</li>
+          <li><strong>Virtualization and environments:</strong> VirtualBox, Docker (basic), Metasploitable, Hack The Box</li>
+          <li><strong>Cloud:</strong> Active learning of offensive AWS (IAM, S3, EC2, insecure configuration)</li>
+        </ul>
+      </div>
+      <aside class="card highlight">
+        <h3>Certifications</h3>
+        <p><strong>eJPT</strong> — eLearnSecurity Junior Penetration Tester (INE Security)</p>
+        <p><strong>Kaspersky CTF</strong> — Capture The Flag Participation</p>
+        <p><strong>NetGamesLatam</strong> — Professional Network Technician Career (UPSIN)</p>
+        <p class="muted">Verifiable IDs</p>
+      </aside>
+    </section>
+
+    <section id="certificaciones" class="card reveal" aria-label="Certifications">
+      <h2>Certifications</h2>
+      <div class="certs">
+        <figure class="cert">
+          <img src="images/ejpt.png" alt="eJPT Certificate from INE Security" loading="lazy">
+          <figcaption>eJPT — INE Security</figcaption>
+        </figure>
+        <figure class="cert">
+          <img src="images/kaspersky-ctf.png" alt="Kaspersky CTF participation certificate" loading="lazy">
+          <figcaption>Kaspersky CTF — Participation</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="proyectos" class="card reveal" aria-label="Technical projects">
+      <h2>Technical Projects</h2>
+      <ul class="timeline">
+        <li>
+          <h3>TestWeb Secure — Web scanning app (2025)</h3>
+          <p>Own tool that integrates Nmap, sqlmap, WhatWeb and FFUF through an HTML frontend and Flask backend, with real-time results.</p>
+        </li>
+        <li>
+          <h3>Audit at Universidad Politécnica de Sinaloa (2025)</h3>
+          <p>Security testing on internal web applications and network audits. Collaboration with IT to implement preventive measures.</p>
+        </li>
+        <li>
+          <h3>Home WiFi audit (2024)</h3>
+          <p>Security assessment with airodump-ng and aircrack-ng.</p>
+        </li>
+        <li>
+          <h3>Traffic analysis with Wireshark (2024)</h3>
+          <p>Capture and analysis of HTTP/HTTPS and ICMP traffic in virtual environments.</p>
+        </li>
+        <li>
+          <h3>Exploitation of vulnerable machines (2024)</h3>
+          <p>Practice with Metasploitable 2 for exploitation and post-exploitation in isolated environments.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="formacion" class="grid-2 reveal" aria-label="Academic education and languages">
+      <div class="card">
+        <h2>Academic Education</h2>
+        <p><strong>Universidad Politécnica de Sinaloa (UPSIN)</strong> — Information Technology Engineering (In progress)</p>
+      </div>
+      <div id="idiomas" class="card">
+        <h2>Languages</h2>
+        <ul class="skills">
+          <li><strong>Spanish:</strong> Native</li>
+          <li><strong>English:</strong> Intermediate (technical reading, documentation, offensive tools)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Santiago González Osuna — Junior Pentester</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
