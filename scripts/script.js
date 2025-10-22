@@ -52,10 +52,22 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Typed role text
-const phrases = ['Pentester Jr. (eJPT)', 'Ciberseguridad Ofensiva', 'Análisis de Tráfico', 'Automatización con Python'];
+// Typed role text - Dynamic based on language
+const phrasesByLang = {
+  'es': ['Pentester Jr. (eJPT)', 'Ciberseguridad Ofensiva', 'Análisis de Tráfico', 'Automatización con Python'],
+  'en': ['Junior Pentester (eJPT)', 'Offensive Cybersecurity', 'Traffic Analysis', 'Python Automation'],
+  'fr': ['Pentester Jr. (eJPT)', 'Cybersécurité Offensive', 'Analyse de Trafic', 'Automatisation Python']
+};
+
+function getCurrentLanguage() {
+  const htmlLang = document.documentElement.lang;
+  return htmlLang || 'es'; // default to Spanish
+}
+
+const phrases = phrasesByLang[getCurrentLanguage()] || phrasesByLang['es'];
 const typedEl = document.getElementById('typed');
 let pi = 0, ci = 0, deleting = false;
+
 function typeLoop() {
   const current = phrases[pi % phrases.length];
   if (!deleting) {
