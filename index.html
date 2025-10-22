@@ -16,6 +16,11 @@
   <header class="site-header" role="banner">
     <nav class="nav">
       <a href="#inicio" class="logo">SGO<span>_</span></a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#logros">Logros</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
@@ -24,6 +29,7 @@
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#formacion">Formación</a></li>
         <li><a href="index-en.html">EN</a></li>
+        <li><a href="index-fr.html">FR</a></li>
       </ul>
     </nav>
   </header>
@@ -87,19 +93,107 @@
     <section id="habilidades" class="grid-2 reveal" aria-label="Habilidades técnicas">
       <div class="card">
         <h2>Habilidades Técnicas</h2>
-        <ul class="skills">
-          <li><strong>Pruebas de Penetración:</strong> Nmap, Burp Suite Professional, sqlmap, FFUF, Wireshark, Metasploit Framework, herramientas personalizadas</li>
-          <li><strong>Seguridad de Aplicaciones Web:</strong> OWASP Top 10, análisis de vulnerabilidades en HTML/JS, PHP, SQL, ASP.NET, interceptación y manipulación de tráfico HTTP/HTTPS</li>
-          <li><strong>Seguridad de Redes:</strong> Protocolos TCP/IP, análisis de puertos y servicios, auditorías de seguridad WiFi, explotación de servicios expuestos, hardening de servidores</li>
-          <li><strong>Administración de Sistemas:</strong> Kali Linux, Debian, Windows Server, Parrot Security OS, CentOS</li>
-          <li><strong>Desarrollo y Automatización:</strong> Python (automatización de seguridad), C++, HTML/CSS, Java (fundamentos), desarrollo de herramientas personalizadas</li>
-          <li><strong>Entornos de Pruebas:</strong> VirtualBox, Docker, Metasploitable, Hack The Box, VMware, laboratorios de seguridad aislados</li>
-          <li><strong>Seguridad en la Nube:</strong> AWS Security (IAM, S3, EC2), identificación de configuraciones inseguras, análisis de permisos y políticas</li>
-          <li><strong>Análisis Forense:</strong> Volatility, Autopsy, Sleuth Kit, análisis de memoria RAM, recuperación de datos, investigación de incidentes</li>
-          <li><strong>Reconocimiento y OSINT:</strong> theHarvester, Maltego, Shodan, Google Dorking, técnicas de recolección de información</li>
-          <li><strong>Explotación de Vulnerabilidades:</strong> CVE research, exploit development básico, reverse engineering, análisis de malware estático</li>
-          <li><strong>Metodologías de Seguridad:</strong> PTES, OWASP Testing Guide, NIST Cybersecurity Framework, gestión de vulnerabilidades</li>
-        </ul>
+        <div class="skills-accordion">
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Pruebas de Penetración</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>Nmap, Burp Suite Professional, sqlmap, FFUF, Wireshark, Metasploit Framework, herramientas personalizadas</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Seguridad de Aplicaciones Web</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>OWASP Top 10, análisis de vulnerabilidades en HTML/JS, PHP, SQL, ASP.NET, interceptación y manipulación de tráfico HTTP/HTTPS</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Seguridad de Redes</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>Protocolos TCP/IP, análisis de puertos y servicios, auditorías de seguridad WiFi, explotación de servicios expuestos, hardening de servidores</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Administración de Sistemas</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>Kali Linux, Debian, Windows Server, Parrot Security OS, CentOS</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Desarrollo y Automatización</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>Python (automatización de seguridad), C++, HTML/CSS, Java (fundamentos), desarrollo de herramientas personalizadas</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Entornos de Pruebas</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>VirtualBox, Docker, Metasploitable, Hack The Box, VMware, laboratorios de seguridad aislados</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Seguridad en la Nube</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>AWS Security (IAM, S3, EC2), identificación de configuraciones inseguras, análisis de permisos y políticas</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Análisis Forense</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>Volatility, Autopsy, Sleuth Kit, análisis de memoria RAM, recuperación de datos, investigación de incidentes</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Reconocimiento y OSINT</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>theHarvester, Maltego, Shodan, Google Dorking, técnicas de recolección de información</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Explotación de Vulnerabilidades</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>CVE research, exploit development básico, reverse engineering, análisis de malware estático</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Metodologías de Seguridad</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>PTES, OWASP Testing Guide, NIST Cybersecurity Framework, gestión de vulnerabilidades</p>
+            </div>
+          </div>
+        </div>
       </div>
       <aside class="card highlight">
         <h3>Certificaciones</h3>
@@ -126,28 +220,53 @@
 
     <section id="proyectos" class="card reveal" aria-label="Proyectos técnicos">
       <h2>Proyectos Técnicos</h2>
-      <ul class="timeline">
-        <li>
-          <h3>Blitzcan — Plataforma de Auditoría Web Automatizada (2025)</h3>
-          <p>Desarrollo de herramienta integral de seguridad que combina Nmap, sqlmap, WhatWeb, ParamSpider, Harvester y FFUF mediante frontend HTML y backend Flask. <strong>Resultado:</strong> Reducción del 60% en tiempo de auditoría (de 8 horas a 3.2 horas promedio) comparado con herramientas tradicionales. Integración exitosa de múltiples herramientas de seguridad en una interfaz unificada para optimizar procesos de evaluación de vulnerabilidades.</p>
-        </li>
-        <li>
-          <h3>Auditoría de Seguridad Institucional — Universidad Politécnica de Sinaloa (2025)</h3>
-          <p>Ejecución de pruebas de penetración en aplicaciones web internas y auditorías de seguridad de red. <strong>Resultado:</strong> Identificación de 8 vulnerabilidades críticas y 12 vulnerabilidades de severidad media. Colaboración directa con el equipo de TI para implementar medidas de mitigación y respuesta a incidentes, contribuyendo al fortalecimiento de la postura de seguridad institucional.</p>
-        </li>
-        <li>
-          <h3>Auditorías de Seguridad WiFi — Sector Comercial (2024)</h3>
-          <p>Evaluación de seguridad en redes WiFi empresariales utilizando airodump-ng y aircrack-ng. <strong>Resultado:</strong> Análisis de 15+ redes corporativas, identificación de vulnerabilidades en protocolos de autenticación y cifrado, proporcionando recomendaciones de hardening que mejoraron la seguridad de las redes corporativas en un 85%.</p>
-        </li>
-        <li>
-          <h3>Análisis Forense de Red — Laboratorio de Seguridad (2024)</h3>
-          <p>Captura y análisis forense de tráfico de red HTTP/HTTPS e ICMP en entornos controlados. Desarrollo de metodologías para la detección de patrones maliciosos y análisis de comportamiento de amenazas en tiempo real.</p>
-        </li>
-        <li>
-          <h3>Laboratorio de Explotación de Vulnerabilidades — Metasploitable 2 (2024)</h3>
-          <p>Prácticas avanzadas de explotación y post-explotación en entornos aislados utilizando Metasploitable 2. Desarrollo de técnicas de escalación de privilegios y persistencia en sistemas comprometidos, aplicando metodologías estándar de la industria.</p>
-        </li>
-      </ul>
+      <div class="projects-accordion">
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Blitzcan — Plataforma de Auditoría Web Automatizada (2025)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Desarrollo de herramienta integral de seguridad que combina Nmap, sqlmap, WhatWeb, ParamSpider, Harvester y FFUF mediante frontend HTML y backend Flask. <strong>Resultado:</strong> Reducción del 60% en tiempo de auditoría (de 8 horas a 3.2 horas promedio) comparado con herramientas tradicionales. Integración exitosa de múltiples herramientas de seguridad en una interfaz unificada para optimizar procesos de evaluación de vulnerabilidades.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Auditoría de Seguridad Institucional — Universidad Politécnica de Sinaloa (2025)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Ejecución de pruebas de penetración en aplicaciones web internas y auditorías de seguridad de red. <strong>Resultado:</strong> Identificación de 8 vulnerabilidades críticas y 12 vulnerabilidades de severidad media. Colaboración directa con el equipo de TI para implementar medidas de mitigación y respuesta a incidentes, contribuyendo al fortalecimiento de la postura de seguridad institucional.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Auditorías de Seguridad WiFi — Sector Comercial (2024)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Evaluación de seguridad en redes WiFi empresariales utilizando airodump-ng y aircrack-ng. <strong>Resultado:</strong> Análisis de 15+ redes corporativas, identificación de vulnerabilidades en protocolos de autenticación y cifrado, proporcionando recomendaciones de hardening que mejoraron la seguridad de las redes corporativas en un 85%.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Análisis Forense de Red — Laboratorio de Seguridad (2024)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Captura y análisis forense de tráfico de red HTTP/HTTPS e ICMP en entornos controlados. Desarrollo de metodologías para la detección de patrones maliciosos y análisis de comportamiento de amenazas en tiempo real.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Laboratorio de Explotación de Vulnerabilidades — Metasploitable 2 (2024)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Prácticas avanzadas de explotación y post-explotación en entornos aislados utilizando Metasploitable 2. Desarrollo de técnicas de escalación de privilegios y persistencia en sistemas comprometidos, aplicando metodologías estándar de la industria.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="experiencia" class="card reveal" aria-label="Experiencia profesional">

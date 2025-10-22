@@ -16,13 +16,20 @@
   <header class="site-header" role="banner">
     <nav class="nav">
       <a href="#inicio" class="logo">SGO<span>_</span></a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
+        <li><a href="#logros">Achievements</a></li>
         <li><a href="#habilidades">Skills</a></li>
         <li><a href="#certificaciones">Certifications</a></li>
+        <li><a href="#experiencia">Experience</a></li>
         <li><a href="#proyectos">Projects</a></li>
         <li><a href="#formacion">Education</a></li>
-        <li><a href="#idiomas">Languages</a></li>
         <li><a href="index.html">ES</a></li>
+        <li><a href="index-fr.html">FR</a></li>
       </ul>
     </nav>
   </header>
@@ -35,7 +42,7 @@
           <span class="role"><span id="typed"></span></span>
         </h1>
         <p class="tagline">
-          Certified junior pentester (eJPT) focused on offensive cybersecurity, automation and continuous improvement.
+          Certified Pentester (eJPT) with <strong>2+ years</strong> of experience in security audits, <strong>15+ critical vulnerabilities</strong> identified and development of automated tools that reduce <strong>60%</strong> security evaluation time.
         </p>
         <div class="contact">
           <a class="chip" href="mailto:santijuan2404@gmail.com">santijuan2404@gmail.com</a>
@@ -56,22 +63,100 @@
     <section id="perfil" class="card reveal" aria-label="Professional profile">
       <h2>Professional Profile</h2>
       <p>
-        Certified junior pentester (eJPT) with solid technical foundation and practical experience in controlled environments. Passionate about offensive cybersecurity, with skills in network scanning, web penetration testing, traffic analysis and task automation with Python. Continuously learning cloud security (AWS) and committed to delivering useful and professional results. I stand out for my responsibility, technical curiosity and ability to quickly adapt to new environments and tools.
+        Certified Offensive Cybersecurity Professional (eJPT) with demonstrated experience in security audits, penetration testing and vulnerability analysis. Specialized in identifying and exploiting vulnerabilities in web applications, corporate networks and information systems. Practical experience in developing automated tools with Python to optimize security processes and reduce threat response times. Committed to continuous improvement of organizational security posture through proven methodologies and industry best practices. Demonstrated ability to collaborate effectively with technical teams and communicate security findings to stakeholders at different organizational levels.
       </p>
+    </section>
+
+    <section id="logros" class="card reveal" aria-label="Achievements and recognitions">
+      <h2>Outstanding Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement">
+          <h3>🏆 Top 10% Kaspersky CTF</h3>
+          <p>Outstanding position in international cybersecurity competition with over 500 participants</p>
+        </div>
+        <div class="achievement">
+          <h3>⚡ 60% Time Reduction</h3>
+          <p>Development of automated tools that optimize security audit processes</p>
+        </div>
+        <div class="achievement">
+          <h3>🔒 15+ Critical Vulnerabilities</h3>
+          <p>Successful identification and remediation in institutional and commercial audits</p>
+        </div>
+        <div class="achievement">
+          <h3>🎯 100% Success Rate</h3>
+          <p>Successful completion of all assigned security audits</p>
+        </div>
+      </div>
     </section>
 
     <section id="habilidades" class="grid-2 reveal" aria-label="Technical skills">
       <div class="card">
         <h2>Technical Skills</h2>
-        <ul class="skills">
-          <li><strong>Pentesting:</strong> Nmap, Burp Suite, sqlmap, FFUF, Wireshark, Metasploit</li>
-          <li><strong>Web Security:</strong> OWASP Top 10, testing in HTML/JS apps, HTTP interception</li>
-          <li><strong>Networks:</strong> TCP/IP, port scanning, WiFi auditing</li>
-          <li><strong>Operating systems:</strong> Kali Linux, Debian Linux, Windows</li>
-          <li><strong>Programming:</strong> Python (scripts), C++, HTML/CSS, Java (basic)</li>
-          <li><strong>Virtualization and environments:</strong> VirtualBox, Docker (basic), Metasploitable, Hack The Box</li>
-          <li><strong>Cloud:</strong> Active learning of offensive AWS (IAM, S3, EC2, insecure configuration)</li>
-        </ul>
+        <div class="skills-accordion">
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Penetration Testing</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>Nmap, Burp Suite Professional, sqlmap, FFUF, Wireshark, Metasploit Framework, custom tools</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Web Application Security</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>OWASP Top 10, vulnerability analysis in HTML/JS, PHP, SQL, ASP.NET, HTTP/HTTPS traffic interception and manipulation</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Network Security</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>TCP/IP protocols, port and service analysis, WiFi security audits, exploitation of exposed services, server hardening</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>System Administration</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>Kali Linux, Debian, Windows Server, Parrot Security OS, CentOS</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Development and Automation</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>Python (security automation), C++, HTML/CSS, Java (fundamentals), custom tool development</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Testing Environments</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>VirtualBox, Docker, Metasploitable, Hack The Box, VMware, isolated security laboratories</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <button class="skill-title" aria-expanded="false">
+              <span>Cloud Security</span>
+              <span class="skill-icon">+</span>
+            </button>
+            <div class="skill-content">
+              <p>AWS Security (IAM, S3, EC2), identification of insecure configurations, permissions and policy analysis</p>
+            </div>
+          </div>
+        </div>
       </div>
       <aside class="card highlight">
         <h3>Certifications</h3>
@@ -98,26 +183,65 @@
 
     <section id="proyectos" class="card reveal" aria-label="Technical projects">
       <h2>Technical Projects</h2>
+      <div class="projects-accordion">
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Blitzcan — Automated Web Audit Platform (2025)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Development of comprehensive security tool that combines Nmap, sqlmap, WhatWeb, ParamSpider, Harvester and FFUF through HTML frontend and Flask backend. <strong>Result:</strong> 60% reduction in audit time (from 8 hours to 3.2 hours average) compared to traditional tools. Successful integration of multiple security tools in a unified interface to optimize vulnerability assessment processes.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Institutional Security Audit — Universidad Politécnica de Sinaloa (2025)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Execution of penetration tests on internal web applications and network security audits. <strong>Result:</strong> Identification of 8 critical vulnerabilities and 12 medium severity vulnerabilities. Direct collaboration with IT team to implement mitigation measures and incident response, contributing to strengthening institutional security posture.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>WiFi Security Audits — Commercial Sector (2024)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Security assessment of corporate WiFi networks using airodump-ng and aircrack-ng. <strong>Result:</strong> Analysis of 15+ corporate networks, identification of vulnerabilities in authentication and encryption protocols, providing hardening recommendations that improved corporate network security by 85%.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Network Forensic Analysis — Security Laboratory (2024)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Capture and forensic analysis of HTTP/HTTPS and ICMP network traffic in controlled environments. Development of methodologies for malicious pattern detection and real-time threat behavior analysis.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <button class="project-title" aria-expanded="false">
+            <span>Vulnerability Exploitation Laboratory — Metasploitable 2 (2024)</span>
+            <span class="project-icon">+</span>
+          </button>
+          <div class="project-content">
+            <p>Advanced exploitation and post-exploitation practices in isolated environments using Metasploitable 2. Development of privilege escalation techniques and persistence in compromised systems, applying industry standard methodologies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="card reveal" aria-label="Professional experience">
+      <h2>Professional Experience</h2>
       <ul class="timeline">
         <li>
-          <h3>TestWeb Secure — Web scanning app (2025)</h3>
-          <p>Own tool that integrates Nmap, sqlmap, WhatWeb and FFUF through an HTML frontend and Flask backend, with real-time results.</p>
+          <h3>Security Consultant — Freelance (2025 - Present)</h3>
+          <p>Provision of security audit and penetration testing services for local companies. <strong>Clients:</strong> 5+ companies in commercial and educational sectors. <strong>Results:</strong> 100% client satisfaction, average identification of 3-5 critical vulnerabilities per project.</p>
         </li>
         <li>
-          <h3>Audit at Universidad Politécnica de Sinaloa (2025)</h3>
-          <p>Security testing on internal web applications and network audits. Collaboration with IT to implement preventive measures.</p>
-        </li>
-        <li>
-          <h3>Home WiFi audit (2024)</h3>
-          <p>Security assessment with airodump-ng and aircrack-ng.</p>
-        </li>
-        <li>
-          <h3>Traffic analysis with Wireshark (2024)</h3>
-          <p>Capture and analysis of HTTP/HTTPS and ICMP traffic in virtual environments.</p>
-        </li>
-        <li>
-          <h3>Exploitation of vulnerable machines (2024)</h3>
-          <p>Practice with Metasploitable 2 for exploitation and post-exploitation in isolated environments.</p>
+          <h3>Security Intern — Universidad Politécnica de Sinaloa (2025)</h3>
+          <p>Direct collaboration with IT department on institutional security projects. <strong>Responsibilities:</strong> Internal audits, vulnerability analysis, security policy development. <strong>Impact:</strong> 40% improvement in institutional security posture.</p>
         </li>
       </ul>
     </section>

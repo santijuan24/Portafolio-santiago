@@ -72,3 +72,82 @@ typeLoop();
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Skills Accordion functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const skillTitles = document.querySelectorAll('.skill-title');
+  
+  skillTitles.forEach(title => {
+    title.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      const content = this.nextElementSibling;
+      
+      // Toggle aria-expanded
+      this.setAttribute('aria-expanded', !isExpanded);
+      
+      // Toggle content visibility
+      if (isExpanded) {
+        content.classList.remove('expanded');
+      } else {
+        content.classList.add('expanded');
+      }
+    });
+  });
+  
+  // Projects Accordion functionality
+  const projectTitles = document.querySelectorAll('.project-title');
+  
+  projectTitles.forEach(title => {
+    title.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      const content = this.nextElementSibling;
+      
+      // Toggle aria-expanded
+      this.setAttribute('aria-expanded', !isExpanded);
+      
+      // Toggle content visibility
+      if (isExpanded) {
+        content.classList.remove('expanded');
+      } else {
+        content.classList.add('expanded');
+      }
+    });
+  });
+  
+  // Mobile menu functionality
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  if (mobileMenuToggle && navLinks) {
+    mobileMenuToggle.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      
+      // Toggle aria-expanded
+      this.setAttribute('aria-expanded', !isExpanded);
+      
+      // Toggle menu visibility
+      navLinks.classList.toggle('active');
+      
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = !isExpanded ? 'hidden' : '';
+    });
+    
+    // Close menu when clicking on nav links
+    navLinks.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A') {
+        this.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+});
